@@ -1,7 +1,7 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://cdn.cjr.org/wp-content/uploads/2019/07/AdobeStock_165953143-686x371.jpeg",
+    "title": "Quiz Tech",
+    "description": "Teste os seus conhecimentos sobre tecnologia em geral e vamos ver se você manja dos paranauê",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -29,7 +29,7 @@
     "external": [
       ""
     ],
-    "theme": {
+    "mainTheme": {
       "colors": {
         "primary": "#4caf50",
         "secondary": "#2979ff",
@@ -41,14 +41,25 @@
       "borderRadius": "4px"
     },
     "halloweenTheme": {
-        "colors": {
-          "primary": "#9c27b0",
-          "secondary": "#ff9100",
-          "mainBg": "#171B35",
-          "contrastText": "#FFFFFF",
-          "wrong": "#FF5722",
-          "success": "#4CAF50"
-        },
-        "borderRadius": "4px"
-      }
+      "colors": {
+        "primary": "#9c27b0",
+        "secondary": "#ff9100",
+        "mainBg": "#171B35",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    },
+    "christmasTheme": {
+      "colors": {
+        "primary": "#ff8a65",
+        "secondary": "#8bc34a",
+        "mainBg": "#FFF4A7",
+        "contrastText": "#424242",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
   }

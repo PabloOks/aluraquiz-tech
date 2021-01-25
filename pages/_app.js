@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = db.theme;
+const theme = db.mainTheme;
 
 export default function App({ Component, pageProps }) {
   return (

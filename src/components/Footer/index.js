@@ -11,6 +11,9 @@ const FooterWrapper = styled.footer`
     width: 58px;
     margin-right: 23px;
   }
+  p {
+    color: white;
+  }
   a {
     color: white;
     text-decoration: none;
