@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = db.mainTheme;
+const theme = db.halloweenTheme;
 
 export default function App({ Component, pageProps }) {
   return (
