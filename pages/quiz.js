@@ -1,7 +1,5 @@
-/* eslint-disable func-names */
 import React from 'react';
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
 
 import db from '../db.json';
 
@@ -22,44 +20,36 @@ export const QuizContainer = styled.div`
   }
 `;
 
-export default function Home() {
-  const router = useRouter();
-  const [name, setName] = React.useState('');
-
+export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h1>Questão 1</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (event) {
-              event.preventDefault();
-              router.push(`/quiz?name=${name}`);
-            }}
-            >
-              <input
-                placeholder="Escreva seu nome aqui"
-                onChange={function (event) {
-                  setName(event.target.value);
-                }}
-              />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
-            </form>
-            <p>{db.description}</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo ab beatae, pariatur labore earum nisi dolore?Temporibus
+              in tenetur pariatur necessitatibus incidunt obcaecati laboriosam,
+              quibusdam ad dolorem, officiis, architecto dignissimos.
+            </p>
           </Widget.Content>
         </Widget>
 
         <Widget>
+          <Widget.Header>
+            <h1>Questão 1</h1>
+          </Widget.Header>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo ab beatae, pariatur labore earum nisi dolore?Temporibus
+              in tenetur pariatur necessitatibus incidunt obcaecati laboriosam,
+              quibusdam ad dolorem, officiis, architecto dignissimos.
+            </p>
           </Widget.Content>
         </Widget>
         <Footer />
