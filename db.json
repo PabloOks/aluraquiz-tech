@@ -1,28 +1,72 @@
 {
-    "bg": "https://cdn.cjr.org/wp-content/uploads/2019/07/AdobeStock_165953143-686x371.jpeg",
-    "title": "Quiz Tech",
-    "description": "Teste os seus conhecimentos sobre tecnologia em geral e vamos ver se você manja dos paranauê",
+    "bg": "https://e-tinet.com/wp-content/uploads/2019/03/Terminal-Linux-1024x512.png",
+    "loadingImg": "https://thumbs.gfycat.com/BitterEarnestBeardeddragon-small.gif",
+    "title": "Linux Quest",
+    "description": "Teste os seus conhecimentos sobre terminal linux e vamos ver se você manja do pinguim",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://riotron.com.br/wp-content/uploads/2017/11/content_arquivos-digitais-kalinka.png",
+        "title": "Qual destes comandos serve para navegar em pastas?",
+        "description": "Começando com algo básico",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "mv",
+          "cp",
+          "cd",
+          "ls",
+          "rm"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "",
+        "title": "",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "",
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           "",
+           ""
         ]
       }
     ],

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -31,7 +32,6 @@ const SVGWrapper = styled.svg`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
 export default function GitHubCorner({ projectUrl }) {
   return (
     <Wrapper>
@@ -45,3 +45,11 @@ export default function GitHubCorner({ projectUrl }) {
     </Wrapper>
   );
 }
+
+GitHubCorner.defaultProps = {
+  projectUrl: '',
+};
+
+GitHubCorner.propTypes = {
+  projectUrl: PropTypes.string,
+};
