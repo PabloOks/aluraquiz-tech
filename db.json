@@ -19,54 +19,54 @@
       },
       {
         "image": "",
-        "title": "",
-        "description": "",
+        "title": "Teste",
+        "description": "Teste",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           "",
-           ""
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste"
         ]
       },
       {
         "image": "",
-        "title": "",
-        "description": "",
+        "title": "Teste",
+        "description": "Teste",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           "",
-           ""
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste"
         ]
       },
       {
         "image": "",
-        "title": "",
-        "description": "",
+        "title": "Teste",
+        "description": "Teste",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           "",
-           ""
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste"
         ]
       },
       {
         "image": "",
-        "title": "",
-        "description": "",
+        "title": "Teste",
+        "description": "Teste",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           "",
-           ""
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste",
+           "Teste"
         ]
       }
     ],
@@ -75,8 +75,8 @@
     ],
     "mainTheme": {
       "colors": {
-        "primary": "#4caf50",
-        "secondary": "#2979ff",
+        "primary": "#fca900",
+        "secondary": "#b37904",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
