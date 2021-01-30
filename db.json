@@ -5,7 +5,7 @@
     "description": "Teste os seus conhecimentos sobre terminal linux e vamos ver se você manja do pinguim",
     "questions": [
       {
-        "image": "https://riotron.com.br/wp-content/uploads/2017/11/content_arquivos-digitais-kalinka.png",
+        "image": "https://media.giphy.com/media/xjCyjx3hJrJ0Q/giphy.gif",
         "title": "Qual destes comandos serve para navegar em pastas?",
         "description": "Começando com algo básico",
         "answer": 2,
@@ -18,62 +18,63 @@
         ]
       },
       {
-        "image": "",
-        "title": "Teste",
-        "description": "Teste",
+        "image": "https://media.giphy.com/media/1RkDDoIVs3ntm/giphy.gif",
+        "title": "Qual dos comandos abaixo serve para alterar a permissão de um arquivo ou pasta?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste"
+           "chmod",
+           "chown",
+           "permission",
+           "perm",
+           "chperm"
         ]
       },
       {
-        "image": "",
-        "title": "Teste",
-        "description": "Teste",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/2WuHHWbGt3fY4/giphy.gif",
+        "title": "Dentre essas opções, qual destes é o comando utilizado para renomear arquivos nativamente?",
+        "description": "",
+        "answer": 3,
         "alternatives": [
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste"
+           "cp",
+           "rename",
+           "rn",
+           "mv",
+           "cn"
         ]
       },
       {
-        "image": "",
-        "title": "Teste",
-        "description": "Teste",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/BM19iGI2xOuiQlaOAv/giphy.gif",
+        "title": "Para que serve o comando sudo?",
+        "description": "Mais uma fácil",
+        "answer": 2,
         "alternatives": [
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste"
+           "Deixa o computador surdo",
+           "Eleva o nível de permissão do usuário atual para um super usuário",
+           "Permite que o usuário atual execute coisas que necessitam de permissões administrativas",
+           "Altera o usuário atual para um usuário root",
+           "Transforma o usuário atual em um super usuário"
         ]
       },
       {
-        "image": "",
-        "title": "Teste",
-        "description": "Teste",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/l2YWlohvjPnsvkdEc/giphy.gif",
+        "title": "Qual destes abaixo não é um gerenciador de pacotes linux?",
+        "description": "A última questão",
+        "answer": 4,
         "alternatives": [
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste",
-           "Teste"
+           "apt",
+           "packman",
+           "yum",
+           "rpm",
+           "pkg"
         ]
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
-    "mainTheme": {
+    "theme": {
       "colors": {
         "primary": "#fca900",
         "secondary": "#b37904",
