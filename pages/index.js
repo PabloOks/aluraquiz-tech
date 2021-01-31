@@ -108,7 +108,7 @@ export default function Home(props) {
                     <Widget.Topic
                       href={`/quiz/${projectName}___${githubUser}`}
                     >
-                      {`${githubUser}/${projectName}`}
+                      {`${(githubUser === 'undefined') ? '' : `${githubUser}/`}${projectName}`}
                     </Widget.Topic>
                   </li>
                 );
