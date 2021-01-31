@@ -97,6 +97,7 @@ export default function Home(props) {
               {selectedContributors.map((link) => {
                 const [projectName, githubUser] = link
                   .replace(/\//g, '')
+                  .replace(' ', '')
                   .replace('http:', '')
                   .replace('https:', '')
                   .replace('.vercel.app', '')
