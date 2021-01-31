@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-param-reassign */
 import React from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
+import cheerio from 'cheerio';
 
 import db from '../db.json';
 
@@ -8,17 +11,39 @@ import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
+import QuizHead from '../src/components/Head';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 
-export default function Home() {
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function selectContributors(contributors) {
+  const index = new Set();
+  while (index.size !== 3) {
+    index.add(getRandomInt(0, contributors.length));
+  }
+
+  return [
+    contributors[[...index][0]],
+    contributors[[...index][1]],
+    contributors[[...index][2]],
+  ];
+}
+
+export default function Home(props) {
   const router = useRouter();
   const [name, setName] = React.useState('');
+  const { selectedContributors } = props;
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <QuizHead title={db.title} description={db.description} bg={db.bg} />
       <QuizContainer>
         <QuizLogo />
         <Widget
@@ -69,9 +94,10 @@ export default function Home() {
             <h1>Quizes da Galera</h1>
 
             <ul>
-              {db.external.map((link) => {
+              {selectedContributors.map((link) => {
                 const [projectName, githubUser] = link
                   .replace(/\//g, '')
+                  .replace('http:', '')
                   .replace('https:', '')
                   .replace('.vercel.app', '')
                   .split('.');
@@ -87,6 +113,14 @@ export default function Home() {
                 );
               })}
             </ul>
+            <p>
+              Quer ver mais quizes top que a galera fez?
+              {' '}
+              <a href="https://aluraquiz-base.alura-challenges.vercel.app/contribuidores">
+                Clique aqui
+              </a>
+              .
+            </p>
           </Widget.Content>
         </Widget>
         <Footer
@@ -103,4 +137,27 @@ export default function Home() {
       <GitHubCorner projectUrl="https://github.com/PabloOks/aluraquiz-tech" />
     </QuizBackground>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const externalData = await fetch('https://aluraquiz-base.alura-challenges.vercel.app/contribuidores');
+
+    const $ = cheerio.load(await externalData.text());
+
+    const data = $('script[id="__NEXT_DATA__"]').html();
+    const { contributors } = JSON.parse(data).props.pageProps;
+    const contributorsUrl = contributors.map((contributor) => contributor.projectUrl);
+
+    const selectedContributors = selectContributors(contributorsUrl);
+
+    return {
+      props: {
+        selectedContributors,
+      },
+      revalidate: 86400,
+    };
+  } catch (err) {
+    throw new Error(err);
+  }
 }

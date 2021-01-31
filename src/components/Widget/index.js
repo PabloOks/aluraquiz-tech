@@ -19,6 +19,18 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+  a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
+    span {
+      text-decoration: underline;
+    }
+  }
 `;
 
 Widget.Header = styled.header`

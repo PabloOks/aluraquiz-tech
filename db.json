@@ -72,7 +72,9 @@
     ],
     "external": [
       "https://aluraquiz-css.omariosouto.vercel.app/",
-      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/",
+      "https://alura-quiz-base.abnner13.vercel.app/",
+      "https://projeto-alura-quiz.andersonfroes.vercel.app/"
     ],
     "theme": {
       "colors": {
